@@ -39,5 +39,7 @@ use {
     {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
+use 'AckslD/swenv.nvim'
+use 'lukas-reineke/indent-blankline.nvim'
 
 end) 

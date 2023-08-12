@@ -4,9 +4,8 @@ lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
-	'sumneko_lua',
 	'rust_analyzer',
-	'omnisharp-roslyn',
+	'pyright',
 })
 
 local cmp = require('cmp')
