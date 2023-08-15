@@ -6,6 +6,9 @@ lsp.ensure_installed({
 	'eslint',
 	'rust_analyzer',
 	'pyright',
+	'black',
+	'omnisharp',
+	'lua_ls}',
 })
 
 local cmp = require('cmp')
