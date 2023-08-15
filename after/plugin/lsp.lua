@@ -8,7 +8,7 @@ lsp.ensure_installed({
 	'pyright',
 	'black',
 	'omnisharp',
-	'lua_ls}',
+	'lua_ls',
 })
 
 local cmp = require('cmp')
