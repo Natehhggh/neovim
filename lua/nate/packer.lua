@@ -42,4 +42,11 @@ use {
 use 'AckslD/swenv.nvim'
 use 'lukas-reineke/indent-blankline.nvim'
 
+-- wont work with verison nvim?
+--use 'psf/black'
+--not sure if it was going anywhere
+--use 'dense-analysis/ale'
+
+use 'jose-elias-alvarez/null-ls.nvim'
+
 end) 

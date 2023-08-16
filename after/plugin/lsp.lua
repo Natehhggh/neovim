@@ -1,12 +1,10 @@
 local lsp = require('lsp-zero')
-
 lsp.preset('recommended')
 lsp.ensure_installed({
 	'tsserver',
 	'eslint',
 	'rust_analyzer',
 	'pyright',
-	'black',
 	'omnisharp',
 	'lua_ls',
 })
@@ -23,6 +21,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 lsp.set_preferences({
 sign_icons = {}
 })
+
 lsp.on_attach(function(client,bufnr)
 	local opts = {buffer = bufnr, remap = false}
 	
@@ -35,8 +34,23 @@ lsp.on_attach(function(client,bufnr)
 	vim.keymap.set("n", "<leader>vca", function() vim.lsp.buf.code_action() end, opts)
 	vim.keymap.set("n", "<leader>vrr", function() vim.lsp.buf.references() end, opts)
 	vim.keymap.set("n", "<leader>vrn", function() vim.lsp.buf.rename() end, opts)
-	vim.keymap.set("n", "<C-h", function() vim.lsp.buf.signature_help() end, opts)
+	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+    vim.keymap.set("n", 'gq', function() vim.lsp.buf.format({async = false, timeout_ms = 10000}) end, opts)
 end)
+
+--lsp.format_on_save({
+--   format_opts = {
+--       async = true,
+--    },
+--    servers = {
+--        ['lua_ls'] = {'lua'},
+--        ['black'] = {'python'},
+--        ['rust_analyzer'] = {'rust'},
+--    }
+--})
 
 
 lsp.setup()
+
+
+--vim.api.nvim_create_autocmd("BufWritePre", {pattern = {"*.py"}, command = "Black"})
