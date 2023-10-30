@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 
 
 
@@ -34,6 +34,19 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("n", "<F1>", "<nop>")
+vim.keymap.set("v", "<F1>", "<nop>")
+vim.keymap.set("i", "<F1>", "<nop>")
+
+
+vim.keymap.set("n", "<Home>", "<nop>")
+vim.keymap.set("v", "<Home>", "<nop>")
+vim.keymap.set("i", "<Home>", "<nop>")
+
+
+vim.keymap.set("n", "<End>", "<nop>")
+vim.keymap.set("v", "<End>", "<nop>")
+vim.keymap.set("i", "<End>", "<nop>")
 
 --todo figure out tmux windows this is what I want
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")

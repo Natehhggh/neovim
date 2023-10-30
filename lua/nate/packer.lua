@@ -14,7 +14,10 @@ use {
 }
 
 use { "catppuccin/nvim", as = "catppuccin" }
-use('nvim-treesitter/nvim-treesitter', {run =':TSUpdate'})
+
+use{'nvim-treesitter/nvim-treesitter', run =':TSUpdate'}
+
+
 use('theprimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
@@ -48,5 +51,14 @@ use 'lukas-reineke/indent-blankline.nvim'
 --use 'dense-analysis/ale'
 
 use 'jose-elias-alvarez/null-ls.nvim'
+
+use 'nvim-lua/plenary.nvim'
+
+use 'ThePrimeagen/git-worktree.nvim'
+
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+}
 
 end) 

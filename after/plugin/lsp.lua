@@ -8,6 +8,8 @@ lsp.ensure_installed({
 	'omnisharp',
 	'lua_ls',
     'zls',
+    'azure_pipelines_ls',
+    'powershell_es',
 })
 
 local cmp = require('cmp')

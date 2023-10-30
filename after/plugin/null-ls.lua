@@ -12,7 +12,7 @@ null_ls.setup({
                 group = augroup,
                 buffer = bufnr,
             })
-            vim.api.nvim_create_autocmd("BufWritePre",{
+                vim.api.nvim_create_autocmd("BufWritePre",{
                 group = augroup,
                 buffer = bufnr,
                 callback = function()
