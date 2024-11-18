@@ -97,7 +97,7 @@ _G.packer_plugins = {
   harpoon = {
     loaded = true,
     path = "C:\\Users\\nate.blau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,

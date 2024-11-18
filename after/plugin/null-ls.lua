@@ -16,7 +16,9 @@ null_ls.setup({
                 group = augroup,
                 buffer = bufnr,
                 callback = function()
-                    vim.lsp.buf.format({bufnr = bufnr})
+                    if not string.find(vim.api.nvim_buf_get_name(0), "models") then
+                        vim.lsp.buf.format({bufnr = bufnr})
+                    end
                 end,
             })
         end

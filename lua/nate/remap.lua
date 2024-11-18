@@ -1,4 +1,8 @@
+-- Assigns leader key
 vim.g.mapleader = " "
+
+
+--Returns to netrw
 vim.keymap.set("n", "<leader>fv", vim.cmd.Ex)
 
 
@@ -60,5 +64,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- rename hovered word
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><left>")
 
-
+-- toggle relative line number for screenshare
+vim.keymap.set("n", "<C-l><C-l>", ":set relativenumber!<CR>")
 

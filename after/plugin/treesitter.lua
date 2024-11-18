@@ -4,7 +4,7 @@ require'nvim-treesitter.configs'.setup {
 
 
  -- M.compilers = {vim.fn.getenv('CC'), "cc", "gcc", "clang", "cl", "zig" }
-  ensure_installed = {"lua", "vim", "vimdoc", "c_sharp", "rust", "python" },
+--  ensure_installed = {"lua", "vim", "vimdoc", "c_sharp", "rust", "python" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,

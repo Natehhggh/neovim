@@ -1,15 +1,15 @@
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
 lsp.ensure_installed({
-	'tsserver',
-	'eslint',
-	'rust_analyzer',
-	'pyright',
-	'omnisharp',
-	'lua_ls',
-    'zls',
-    'azure_pipelines_ls',
-    'powershell_es',
+--	'tsserver',
+--	'eslint',
+--	'rust_analyzer',
+--	'pyright',
+--	'omnisharp',
+--	'lua_ls',
+--    'zls',
+ --   'azure_pipelines_ls',
+  --  'powershell_es',
 })
 
 local cmp = require('cmp')
@@ -55,5 +55,3 @@ end)
 
 lsp.setup()
 
-
---vim.api.nvim_create_autocmd("BufWritePre", {pattern = {"*.py"}, command = "Black"})
