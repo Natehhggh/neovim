@@ -86,4 +86,7 @@ use {
   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 }
 
+-- todo list
+use 'Hashino/doing.nvim'
+
 end) 

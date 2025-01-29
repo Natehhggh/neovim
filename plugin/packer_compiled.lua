@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\nate.blau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["doing.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\nate.blau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\doing.nvim",
+    url = "https://github.com/Hashino/doing.nvim"
+  },
   ["git-worktree.nvim"] = {
     loaded = true,
     path = "C:\\Users\\nate.blau\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-worktree.nvim",

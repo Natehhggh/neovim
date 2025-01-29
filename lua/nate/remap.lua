@@ -65,5 +65,5 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><left>")
 
 -- toggle relative line number for screenshare
-vim.keymap.set("n", "<C-l><C-l>", ":set relativenumber!<CR>")
+vim.keymap.set("n", "<C-;>", ":set relativenumber!<CR>")
 
